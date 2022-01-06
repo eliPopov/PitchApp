@@ -1,0 +1,37 @@
+{
+  "pitches": [
+    {
+      "name": "Tennis center",
+      "address": "Yehuda Halevi St, Be'er Sheva, Israel",
+      "slug": "Tennis center",
+      "roof": "false",
+      "photos": [
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1641472602/outdoor-tennis-court-3_nirpup.jpg"
+      ],
+      "floor": "grass, clay",
+      "sports": "tennis"
+    },
+    {
+      "name": "Goaltime",
+      "address": "Derech Ilan Ramon, Beer Sheva, Israel",
+      "slug": "Goaltime",
+      "roof": "true",
+      "photos": [
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1640972408/thumbnail_pitch2_9ff205202c.jpg"
+      ],
+      "floor": "asphalt",
+      "sports": "soccer"
+    },
+    {
+      "name": "Ramot new",
+      "address": "11 Levy Eshkol St, Beer Sheva, Israel ",
+      "slug": "Ramot new",
+      "roof": "true",
+      "photos": [
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1641472380/indoor-handball-court-flooring-service-500x500_woyqs2.jpg"
+      ],
+      "floor": "wood",
+      "sports": "handball"
+    }
+  ]
+}
