@@ -1,6 +1,18 @@
+.label {
+  margin-right: 10px;
+}
+
 .filter {
   position: relative;
   display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown_filter {
+  height: 50px;
 }
 
 .filter__button {

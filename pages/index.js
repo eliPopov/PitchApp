@@ -2,10 +2,12 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import PitchItem from '../components/PitchItem';
 import { API_URL } from '../config/index';
+import Showcase from '../components/Showcase';
 
 export default function HomePage({ pitches }) {
   return (
     <Layout>
+      <Showcase />
       <h1>Top Pitches</h1>
       {pitches.length === 0 && <h3>No Pitches Found</h3>}
 
@@ -27,7 +29,7 @@ export async function getStaticProps() {
   const pitches = await res.json();
 
   return {
-    props: { pitches: pitches.slice(0, 2) },
+    props: { pitches: pitches.slice(0, 3) },
     revalidate: 1,
   };
 }

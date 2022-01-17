@@ -3,6 +3,7 @@ import PitchItem from '../../components/PitchItem';
 import { API_URL } from '../../config/index';
 import { useState } from 'react';
 import Filter from '@/components/Filter';
+import Link from 'next/link';
 
 const filterBySport = (pitchSport, filterSport) => {
   return pitchSport === filterSport;
@@ -27,6 +28,9 @@ export default function PitchesPage({ pitches }) {
       {roof
         ? pitches.filter((pitch) => pitch.roof === true)
         : pitches.map((pitch) => <PitchItem key={pitch.id} pitch={pitch} />)}
+      <Link href='/pitches'>
+        <a className='btn-secondary'>Go Back</a>
+      </Link>
     </Layout>
   );
 }

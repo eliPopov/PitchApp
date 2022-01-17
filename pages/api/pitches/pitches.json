@@ -3,19 +3,47 @@
     {
       "name": "Tennis center",
       "address": "Yehuda Halevi St, Be'er Sheva, Israel",
+      "lat": 31.255451,
+      "lng": 34.787389,
       "slug": "Tennis center",
-      "roof": "false",
+      "roof": false,
+      "lighting": true,
+      "ratings": [4, 4, 5, 3, 5, 5, 2, 3],
+      "reviews": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "photos": [
-        "https://res.cloudinary.com/dswavxn2w/image/upload/v1641472602/outdoor-tennis-court-3_nirpup.jpg"
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1641472602/outdoor-tennis-court-3_nirpup.jpg",
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1641832774/images_h6loee.jpg"
       ],
       "floor": "grass, clay",
       "sports": "tennis"
     },
     {
       "name": "Goaltime",
-      "address": "Derech Ilan Ramon, Beer Sheva, Israel",
+      "address": "20 Derech Ilan Ramon, Beer Sheva, Israel",
+      "lat": 31.248772,
+      "lng": 34.755796,
       "slug": "Goaltime",
-      "roof": "true",
+      "roof": true,
+      "lighting": true,
+      "ratings": [3, 4, 4, 5],
+      "reviews": ["", "", "", "", "", "", "", "", "", "", "", "", ""],
       "photos": [
         "https://res.cloudinary.com/dswavxn2w/image/upload/v1640972408/thumbnail_pitch2_9ff205202c.jpg"
       ],
@@ -24,14 +52,129 @@
     },
     {
       "name": "Ramot new",
-      "address": "11 Levy Eshkol St, Beer Sheva, Israel ",
+      "address": "11 Levy Eshkol St, Beer Sheva, Israel",
+      "lat": 31.252973,
+      "lng": 34.791462,
       "slug": "Ramot new",
-      "roof": "true",
+      "roof": true,
+      "lighting": true,
+      "ratings": [3, 4, 4, 5, 2, 3, 4],
+      "reviews": ["", "", "", "", "", "", "", "", "", "", "", ""],
       "photos": [
         "https://res.cloudinary.com/dswavxn2w/image/upload/v1641472380/indoor-handball-court-flooring-service-500x500_woyqs2.jpg"
       ],
       "floor": "wood",
       "sports": "handball"
+    },
+    {
+      "name": "Ben Gurion Soccer Field",
+      "address": "22 Ben Gurion Avenue, Beer Sheva, Israel",
+      "lat": 31.262686,
+      "lng": 34.79704,
+      "slug": "Ben Gurion Soccer Field",
+      "roof": false,
+      "lighting": true,
+      "ratings": [3, 4, 4, 5, 4, 5, 2, 3, 4],
+      "reviews": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "photos": [
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1642020884/dttbyf3oq8rapmwhl2fa.jpg"
+      ],
+      "floor": "grass",
+      "sports": "footbal"
+    },
+    {
+      "name": "Hakunhia Hall",
+      "address": "25 Etzel St, Beer Sheva, Israel",
+      "lat": 31.256902,
+      "lng": 34.758709,
+      "slug": "Hakunhia Hall",
+      "roof": true,
+      "lighting": true,
+      "ratings": [3, 4, 4, 5, 4, 5, 2, 3, 4, 5, 5, 5],
+      "reviews": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "photos": [
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1642021190/26230130_503545593379473_4859699266956682966_n.jpg_rlm3yr.jpg"
+      ],
+      "floor": "wood",
+      "sports": "basketball"
+    },
+    {
+      "name": "Taubel Pitch",
+      "address": "40 Ben Gurion St, Beer Sheva, Israel",
+      "lat": 31.261426,
+      "lng": 34.799555,
+      "slug": "Hakunhia Hall",
+      "roof": true,
+      "lighting": true,
+      "ratings": [3, 4, 4, 5, 4, 5, 2, 3, 4, 5, 5, 5],
+      "reviews": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "photos": [
+        "https://res.cloudinary.com/dswavxn2w/image/upload/v1642021622/ogzrwdu55aj2snqxutvu.jpg"
+      ],
+      "floor": "grass",
+      "sports": "football"
     }
   ]
 }

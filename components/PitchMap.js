@@ -1,36 +1,45 @@
-import GoogleMapReact from 'google-map-react';
-import Geocode from 'react-geocode';
-import { Wrapper, Status } from '@googlemaps/react-wrapper';
+import React, { useState } from 'react';
+import {
+  GoogleMap,
+  LoadScript,
+  Marker,
+  InfoWindow,
+} from '@react-google-maps/api';
+import { FaBasketballBall } from 'react-icons/fa';
 
-export default function PitchMap({ pitch }) {
-  const location = {
-    lat: 0,
-    lng: 0,
+const containerStyle = {
+  width: '300px',
+  height: '300px',
+};
+
+function SimpleMap({ pitch }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const infoString = `{pitch.name} {pitch.rating}`;
+  const center = {
+    lat: 31.252973,
+    lng: 34.791462,
   };
-  Geocode.fromAddress(pitch.address).then(
-    (response) => {
-      location = response.results[0].geometry.location;
-    },
-    (error) => {
-      console.error(error);
-    }
-  );
 
   return (
-    <div style={{ display: 'flex', height: '100%' }}>
-      <Wrapper apiKey={'key'}>
-        <Map
-          center={center}
-          onClick={onClick}
-          onIdle={onIdle}
-          zoom={zoom}
-          style={{ flexGrow: '1', height: '100%' }}
-        >
-          {clicks.map((latLng, i) => (
-            <Marker key={i} position={latLng} />
-          ))}
-        </Map>
-      </Wrapper>
-    </div>
+    <LoadScript googleMapsApiKey='AIzaSyDrjGrs0IT-Ac3Fb_TXV-jyUaADXKw45q4'>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
+        <Marker
+          position={{ lat: pitch.lat, lng: pitch.lng }}
+          onClick={() => setIsOpen(!isOpen)}
+          clickable='true'
+        />
+        {isOpen && (
+          <InfoWindow
+            position={{ lat: pitch.lat, lng: pitch.lng }}
+            content={infoString}
+            onCloseClick={() => setIsOpen(!isOpen)}
+          >
+            <FaBasketballBall />
+          </InfoWindow>
+        )}
+      </GoogleMap>
+    </LoadScript>
   );
 }
+
+export default SimpleMap;

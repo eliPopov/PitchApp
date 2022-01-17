@@ -1,27 +1,44 @@
-.pitch {
+.wrapper {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 4em;
+}
+
+.controls h1 {
+  text-align: left !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.left_col {
+  margin-left: 50px;
+}
+.right_col {
+  text-align: left;
+}
+.back {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  display: block;
+  bottom: 10;
+  right: 10;
+  text-align: center;
+}
+
+.back :hover {
+  color: blue;
+}
+.calendar-container {
+  height: 300px;
+  width: 500px;
   position: relative;
-  padding-top: 40px;
-}
-
-.pitch h3 {
-  font-size: 25px;
-}
-
-.pitch p {
-  margin: 10px 0;
-}
-
-.image {
+  right: 0;
   margin-bottom: 20px;
 }
 
-.controls {
-  position: absolute;
-  right: 30px;
-  top: 0;
+.slide_container {
+  margin-bottom: 40px;
 }
-
-.back {
-  display: block;
-  margin-top: 40px;
+.controls {
+  margin-bottom: 40px;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import ReactSearchBox from 'react-search-box';
 import styles from '../styles/Filter.module.css';
 
 export default function Filter({ setSport, roof, setRoof, setFloor }) {
@@ -13,44 +13,45 @@ export default function Filter({ setSport, roof, setRoof, setFloor }) {
         !roof;
       }
     });
+  const toggleLight = () =>
+    setRoof(() => {
+      if (roof === null) {
+        roof = true;
+      } else {
+        !roof;
+      }
+    });
 
   return (
-    <div className={styles.filter}>
-      <div>
-        <label>
-          <select
-            onChange={(e) => {
-              setSport(e.target.value);
-            }}
-            className='filter'
-          >
-            <option value='All'>Filter by Sport</option>
-            <option value='Basketball'>Basketball</option>
-            <option value='Handball'>Handball</option>
-            <option value='Tennis'>Tennis</option>
-            <option value='Soccer'>Soccer</option>
-          </select>
-        </label>
+    <div className='flex-container'>
+      <div className='search-box'>
+        <ReactSearchBox placeholder='Search by name...' />
       </div>
-      <div>
-        <label>
-          <select
-            onChange={(e) => {
-              setFloor(e.target.value);
-            }}
-            className='filter'
-          >
-            <option value='All'>Filter by Floor</option>
-            <option value='grass'>grass</option>
-            <option value='clay'>clay</option>
-            <option value='wood'>wood</option>
-            <option value='asphalt'>asphalt</option>
-          </select>
-        </label>
+      <div class='dropdown'>
+        <button class='dropbtn'>Filter by Sport</button>
+        <div class='dropdown-content'>
+          <a value='Basketball'>Basketball</a>
+          <a value='Handball'>Handball</a>
+          <a value='Tennis'>Tennis</a>
+          <a value='Soccer'>Soccer</a>
+        </div>
       </div>
-      <div>
-        <label>Roof</label>
+      <div class='dropdown'>
+        <button class='dropbtn'>Filter by Floor</button>
+        <div class='dropdown-content'>
+          <a value='grass'>grass</a>
+          <a value='clay'>clay</a>
+          <a value='wood'>wood</a>
+          <a value='asphalt'>asphalt</a>
+        </div>
+      </div>
+      <div className={styles.filter}>
+        <label className={styles.label}>Roof</label>
         <input type='checkbox' onChange={toggleRoof} />
+      </div>
+      <div className={styles.filter}>
+        <label className={styles.label}>Lighting</label>
+        <input type='checkbox' onChange={toggleLight} />
       </div>
     </div>
   );

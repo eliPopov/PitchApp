@@ -1,5 +1,8 @@
 .container {
-  margin: 60px auto;
-  max-width: 960px;
-  padding: 0 30px;
+  background-image: url(https://res.cloudinary.com/dswavxn2w/image/upload/v1642012316/images_jhzm5g.jpg);
+  background-size: 100%;
+}
+
+.container h1 {
+  text-align: center;
 }
