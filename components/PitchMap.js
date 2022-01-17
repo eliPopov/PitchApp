@@ -6,6 +6,7 @@ import {
   InfoWindow,
 } from '@react-google-maps/api';
 import { FaBasketballBall } from 'react-icons/fa';
+import API_KEY from '../env.local';
 
 const containerStyle = {
   width: '300px',
@@ -21,7 +22,7 @@ function SimpleMap({ pitch }) {
   };
 
   return (
-    <LoadScript googleMapsApiKey='AIzaSyDrjGrs0IT-Ac3Fb_TXV-jyUaADXKw45q4'>
+    <LoadScript googleMapsApiKey={API_KEY}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
         <Marker
           position={{ lat: pitch.lat, lng: pitch.lng }}
